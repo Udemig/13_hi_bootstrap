@@ -1,0 +1,32 @@
+.title-1 {
+  padding: 55px;
+  background-color: red !important;
+  /* Bizim still özelliğimiz ve bootstrap'in still özelliği arasında bir çakışma olursa bunu !important ile çözeriz. */
+}
+
+#text-6 {
+  font-size: 44px;
+}
+
+#price-card {
+  width: 33%;
+}
+
+#child-1 {
+  width: 200px;
+  margin: 10px 20px;
+  background-color: red;
+  padding: 10px;
+  height: 100px;
+}
+
+#btn-wrapper {
+  margin: 10px;
+  width: 420px;
+  height: 300px;
+  background-color: grey;
+}
+
+.active {
+  background-color: red !important;
+}

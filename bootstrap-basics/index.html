@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- * Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- * Custom Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- * Bootstrap background'ı bg classı şeklinde yönetir.Bootstrap içerisinde yer alan bazı renk kodları vardır.Primary,secondary,danger,... bu isimler sayesinde arkaplana renkler verilir. -->
+
+    <!-- * Bootstrap içerisinde belirli bir ölçü birimi bulunmaktadır.Bu ölçüm yapısı margin,padding,border-with gibi yapıların tümünde geçerlidir.
+     
+    0 ==> 0 rem 
+    1 ==> 0.25rem (4px)
+    2 ==> 0.5 rem (8px)
+    3 ==> 1 rem (16px)
+    4 ==> 1.5rem (24px)
+    5 ==> 3 rem (48px)
+
+
+    * Bootstrap'de padding still'i p classı ile verilir.Bu class 0--5 arasında ölçülere alır.Sadece p classının kullanılması her yönden (top,left,bottom ve right)  padding verirken bunu gereken yönde özelleştirebiliriz.
+
+    * pt ==> padding-top
+
+    * pe ==> padding-right
+
+    * pb ==> padding-bottom
+
+    * ps ==> padding-left
+
+    * px ==> padding-horizontal
+
+    * py ==> padding-vertical
+
+
+
+
+    * Bootstrap'de margin still'i m classı ile verilir.Bu class 0--5 arasında ölçülere alır.Sadece m classının kullanılması her yönden (top,left,bottom ve right)  margin verirken bunu gereken yönde özelleştirebiliriz.
+
+    * mt ==> margin-top
+
+    * me ==> margin-right
+
+    * mb ==> margin-bottom
+
+    * ms ==> margin-left
+
+    * mx ==> margin-horizontal
+ 
+    * my ==> margin-vertical
+    
+
+
+    * text-[bootstrap renk adı(primary,secondary,danger,warning,...)] classı ile bir elemanın yazı rengi güncellenebilir.
+
+
+    * border classı ile elemana bir border verebiliriz.Bu class sayesinde border aktif edilir.Border kalınlığı border--[0--5] şeklinde belirlenebilir.Border rengi ise border-[bootstrap renk kodu(primary,secondary,...)] şeklinde belirtilir.
+
+    * text alignment özelliği ise bootstrap'de text -[start || center || end] ile yapılır.
+
+
+    * text-wrap ==> Kapsama sığmama durumunda content'in taşmamasını sağlar.Bu özelliğin bootstrap classı text-wrap'dir.
+
+    * text-transform özelliklerini bootstrap'de  text-lowercase || text-uppercase || text-capitalize ile sağlarız.
+
+    * fs-[1--6] ==> Bir elemanın yazı boyutunu belirlemek için kullanılır.
+
+    * fw ==> Bir elemanın font-weight'ini ayarlamak için kullanılır.
+
+
+    * text-decoration ==> Bir elemanın yazı stillendirmesi(altı çizili,üstü çizili) şeklinde ayarlamak için kulllanılır.text-decoration-underline || text-decoration-none || text-decoration-line-through
+
+    * w-[100 || 75 || 50 || 25] ==> Bir elemanın bulunduğu satırın ne kadarını kaplayacağını belirlemek için kullanılır.
+
+
+    * overflow ==> Bir elemanın contentinin kapsayıcıya göre taştığı durumda bu taşmayı yönetmemizi sağlar. hiddden => Taşmayı engelle || auto => Scrool ile taşmayı yönet
+
+
+    * flexbox bootstrap'da d-flex classı ile aktif edilir.Flexbox aktif edildikten sonra flexbox içerisindeki elemanların nasıl hizalanacağı ise justify-content-between || justify-content-around || justify-content-evenly || justify-content-center || justify-content-start || justify-content-end classları ile kontrol edebiliriz.
+
+    * flexbox'ın yönünü ise flex-row || flex-row-reverse || flex-column || flex-column-reverse ile ayarlayabiliriz.
+
+
+
+    
+    -->
+
+    <!-- Breakpoint	Class infix	Dimensions
+    Extra small	None	<576px
+    Small	sm	≥576px
+    Medium	md	≥768px
+    Large	lg	≥992px
+    Extra large	xl	≥1200px
+    Extra extra large	xxl	≥1400px -->
+
+    <h1
+      class="bg-primary pt-2 pb-3 ps-4 pe-5 mt-3 me-2 mb-5 ms-4 text-danger text-center text-lowercase"
+    >
+      Udemig Akademi
+    </h1>
+    <h1 class="bg-success text-white text-end">Udemig Akademi</h1>
+    <h1
+      class="bg-warning text-secondary mx-1 my-4 p-3 border border-top text-capitalize"
+    >
+      udemig akademi
+    </h1>
+    <h1
+      class="bg-dark-subtle title-1 text-warning mx-2 my-3 border border-5 border-success text-decoration-line-through"
+      id="text-6"
+    >
+      Udemig Akademi
+    </h1>
+
+    <div class="bg-info p-2 mx-2" id="price-card">
+      <span class="text-decoration-line-through">119</span>
+      <span>109</span> TL
+    </div>
+
+    <div id="child-1" class="overflow-auto">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      reprehenderit illum illo voluptas fugiat, pariatur fugit enim omnis quae
+      dolore voluptatum iure officiis blanditiis dicta minus aperiam commodi
+      beatae ipsum.
+    </div>
+
+    <div
+      class="bg-warning p-3 mx-2 d-flex justify-content-between flex-row-reverse"
+    >
+      <h4>Udemig-1</h4>
+      <h4>Udemig-2</h4>
+      <h4>Udemig-3</h4>
+      <h4>Udemig-4</h4>
+    </div>
+
+    <!-- <header class="bg-success position-fixed w-100 bottom-0">
+      <h1>Udemig Logo</h1>
+    </header> -->
+
+    <div id="btn-wrapper" class="position-relative">
+      <button class="position-absolute bottom-0 end-0">Buton-1</button>
+      <button class="position-absolute bottom-0">Buton-2</button>
+      <button class="position-absolute end-0">Buton-3</button>
+      <button class="position-absolute">Buton-4</button>
+      <button class="position-absolute top-50 start-50 translate-middle">
+        Buton-5
+      </button>
+    </div>
+
+    <button class="btn btn-primary mx-2 d-none d-lg-block">Button</button>
+
+    <header
+      class="bg-dark-subtle mx-1 p-2 d-flex align-items-center justify-content-between mt-2"
+    >
+      <h1>Logo</h1>
+
+      <nav class="d-flex gap-1 display-none">
+        <li class="list-group-item d-none d-md-block">
+          <a class="text-decoration-none" href="#">Ana Sayfa</a>
+        </li>
+        <li class="list-group-item d-none d-md-block">
+          <a class="text-decoration-none" href="#">Hakkımızda</a>
+        </li>
+        <li class="list-group-item d-none d-md-block">
+          <a class="text-decoration-none" href="#">İletişim</a>
+        </li>
+      </nav>
+
+      <button class="btn btn-success d-block d-sm-none">Giriş Yap</button>
+    </header>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="container bg-danger">
+      <h1>Udemig</h1>
+    </div>
+
+    <div class="container bg-success">
+      <h1>Udemig</h1>
+    </div>
+    <!-- 
+    * Bootstrap bir satırı 12 br olarak kabul eder.Bu satır içerisinde elemanların nasıl hizalanacağı ise bize kalmıştır.(1br lik 12 eleman veya 4br'lik 3 eleman gibi)Bu şekilde media quaries kullanmadan hızlıca arayüzü responsive yapabiliriz. -->
+
+    <div class="container my-5 bg-black p-2 overflow-hidden">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 bg-danger">Sol</div>
+        <div class="col-md-6 col-lg-4 bg-warning">Orta</div>
+        <div class="col-md-6 col-lg-4 bg-secondary">Sağ</div>
+        <div class="col-md-6 col-lg-4 bg-danger">Sol-1</div>
+        <div class="col-md-6 col-lg-4 bg-warning">Orta-1</div>
+        <div class="col-md-6 col-lg-4 bg-secondary">Sağ-1</div>
+      </div>
+    </div>
+
+    <div class="container my-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col bg-black text-white">1</div>
+        <div class="col bg-success">2</div>
+        <div class="col bg-black text-white">3</div>
+        <div class="col bg-success">4</div>
+        <div class="col bg-black text-white">5</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <!-- Item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Hakkımızda ?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Udemig akademi yazılım sektörünün en iyi yazılım akademisidir.
+            </div>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Eğitimlerimiz
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Alanında deneyimli eğitmenler tarafından verilen eğitimler
+              sayesinde mevzunlarımız sektöre güçlü bir giriş yapıyor.
+            </div>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Staj İmkanı
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Eğitim sonrasında öğrencilerimize staj imkanı sağlıyoruz.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <!-- Alert -->
+      <div class="alert alert-danger" role="alert">
+        İşlem sırasında bir hata oluştu.
+      </div>
+
+      <!-- Badge -->
+      <h1 class="d-flex align-items-center gap-3">
+        Oyuncu Monitörü <span class="badge text-bg-success">Yeni Ürün</span>
+      </h1>
+
+      <!-- Card -->
+      <div class="card" style="width: 18rem">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Kulaklık</h5>
+          <p class="card-text">Kulaklık hakkında açıklama</p>
+          <a href="#" class="btn btn-primary">Satın Al</a>
+        </div>
+      </div>
+
+      <!-- List -->
+      <ul class="list-group mt-3">
+        <li class="list-group-item active" aria-current="true">
+          An active item
+        </li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+    </div>
+    <!-- * Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
